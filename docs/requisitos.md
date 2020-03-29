@@ -5,15 +5,14 @@ Plataforma com o principal objetivo de conectar jogadores de xadrez
 - Gerenciar seu perfil 
     - Criar perfil
     - Atualizar perfil
-    - Ver seu próprio perfil e o dos outros jogadores
-    - Deletar seu perfil
+    - Ver seu próprio perfil
+    - Deletar perfil
 
--  Criar relacionamento com outros jogadores
+- Sistema de ligação de contaas
     - Enviar/Receber pedidos de amizade
     - Aceitar/recusar pedidos de amizade
-
-- Ver solicitações de relacionamentos pendentes
-    - Pedidos de amizades recebidos/enviados pendentes
+    - Ver pedidos de amizades recebidos/enviados pendentes
+    - Cancelar pedidos enviados pendentes de amizade
 
 - O jogador terá um perfil público
     - Contendo dados estatísticos
@@ -60,4 +59,53 @@ Plataforma com o principal objetivo de conectar jogadores de xadrez
 
 
 ### Requisitos não funcionais
+    
+- Modularidade:
+    - Webpack 4
 
+- Compatibilidade:
+    - Babel
+
+- Acessibilidade :
+    - Utilizar tags HTML5 semânticas e com arial-attributes
+
+- Autenticação:
+    - Usar no mínimo dois oAuth destas empresas:
+        - Google
+        - Facebook
+        - Github
+        - Gitlab
+        - Microsoft
+
+- Versionamento de código:
+    - Utilizar Git
+    - Utilizar o serviço Github
+    - Padronização de commits pelas ferramentas:
+        - Commitlint
+        - Commitizen
+        - Husk
+
+- Padronização de código:
+    - Editor Config
+    - ESLint
+    - Prettier
+
+- Tecnologias
+    - Front-end
+        - Utilizar ReactJs
+        - Se necessário, usar React Redux para centralizar o estado
+        - Utilizar Redux Saga para operações assíncronas
+        - A interface deve user funções com Debounce (Pesquisa)
+
+    - Back-end
+        - Servidor em NodeJs
+        - Utilizando o Framework Express.js ou Adonis.js
+        - Real Time: Protocolo Websocket com algum destes:
+            - Socket.io
+            - Feathers
+            
+    - Banco de dados:
+        - Banco de dados não relacional MongoDB
+        - ORM Mongoose ou Sequelize
+
+- Deve ser totalmente Open Source
