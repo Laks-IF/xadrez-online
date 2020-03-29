@@ -3,16 +3,22 @@ Plataforma com o principal objetivo de conectar jogadores de xadrez
 
 ### Requisitos Funcionais
 - Gerenciar seu perfil 
-    - Criar perfil
-    - Atualizar perfil
-    - Ver seu próprio perfil
-    - Deletar perfil
+    - Operações (CRUD)
+        - Criar perfil
+        - Atualizar perfil
+        - Ver seu próprio perfil
+        - Deletar perfil
+    - Sessão
+        - Sair do perfil
+        - Entrar novamente no perfil
+    - Forma de criar perfil
+        - O jogador pode fazer login no perfil ou criar um a partir de uma rede social
 
-- Sistema de ligação de contaas
+- Sistema de amigos
     - Enviar/Receber pedidos de amizade
     - Aceitar/recusar pedidos de amizade
     - Ver pedidos de amizades recebidos/enviados pendentes
-    - Cancelar pedidos enviados pendentes de amizade
+    - Cancelar pedidos de amizade enviados e que pendentes
 
 - O jogador terá um perfil público
     - Contendo dados estatísticos
@@ -20,11 +26,10 @@ Plataforma com o principal objetivo de conectar jogadores de xadrez
         - Quantidade de vitórias
         - Quantidade de derrotas
         - Quantidade de empates
-
     - Contendo dados públicos
+        - Quando se registrou na plataforma
         - Quantidade de amigos
         - Listagem de amigos
-
     - (OPCIONAL) Contendo dados de contato
         - Foto de perfil
         - Número de telefone
@@ -33,49 +38,53 @@ Plataforma com o principal objetivo de conectar jogadores de xadrez
         - Facebook
         - Discord
 
-- Sistema de procura por outros jogadores
-    - Procurar pelo nickname único
-    - Procurar pelo ID, também único
-    - Pelo nome, porém não único
+- Sistema de procura
+    - Por outros jogadores
+        - Procurar pelo nickname único
+        - Procurar pela tag, também único
+        - Pelo nome, porém não único
+    - Procura de salas
+        - Pelo nome da sala
+        - Pela tag da sala
+        - Filtrar pela quantidade minima/maxima de jogadores
+        - Filtrar por salas cheias ou não
 
 - Gerenciar salas
     - Criar salas
-        - Com capacidade especificada
-
+        - Com capacidade especificada, com no máximo 10 pessoas
     - Deletar salas
-
     - Entrar/Sair de salas
-
     - Requisitos
-        - Se a capacidade for maior que dois
-        apenas dois jogadores jogam, o resto assiste
         - Em cada sala, deverá haver um chat
 
-- Sistema de procura de salas
-    - Pelo nome da sala
-    - Pelo ID da sala
-    - Filtrar pela quantidade minima/maxima de jogadores
-    - Filtrar por salas cheias ou não
+- Gerenciar partidas dentro das salas:
+    - Poderá desafiar outro jogador ou receber desafios para uma partida
+    - Possibilidade de aceitar/recusar desafios
+    - Ao aceitar, os dois irão para uma página com um tabuleiro de xadrez
+    - Ao acabar a partida, os dados devem ser contabilizados para o perfil e os dois jogadores devem ser redirecionados para a mesma sala, se houver
+
+- Sistema de 
 
 
 ### Requisitos não funcionais
     
-- Modularidade:
+- A Aplicação deve Modularizada:
     - Webpack 4
 
 - Compatibilidade:
     - Babel
 
-- Acessibilidade :
+- Acessibilidade:
     - Utilizar tags HTML5 semânticas e com arial-attributes
 
 - Autenticação:
-    - Usar no mínimo dois oAuth destas empresas:
+    - Usar no mínimo dois oAuth destas redes sociais:
         - Google
         - Facebook
         - Github
         - Gitlab
         - Microsoft
+    - Usar Token JWT para autenticação
 
 - Versionamento de código:
     - Utilizar Git
