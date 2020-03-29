@@ -1,5 +1,5 @@
 ## Xadrez Online
-Esta plataforma tem o principal objetivo de conectar jogadores de xadrez
+Plataforma com o principal objetivo de conectar jogadores de xadrez
 
 ### Requisitos Funcionais
 - Gerenciar seu perfil 
