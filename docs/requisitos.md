@@ -2,25 +2,34 @@
 Plataforma com o principal objetivo de conectar jogadores de xadrez
 
 ### Requisitos Funcionais
-- Gerenciar Playlists:
-  - Poder criar uma nova Playlist
-  - Poder deletar uma Playlist existente
-  - Poder adicionar músicas à Playlist existente
-  - Poder ouvir Playlists
+- Playlists:
+  - Poder criar uma nova playlist
+  - Poder deletar uma playlist existente
+  - Poder adicionar músicas à playlist existente
+  - Poder ouvir playlists
   
-- Gerenciar músicas
-  - Poder salvar uma música em uma das Playlists
-  - Poder remover uma música de uma Playlist
+- Músicas
+  - Poder salvar uma música em uma das playlists
+  - Poder remover uma música de uma playlist
+  - Todas as músicas devem ser no estilo Lo-Fi
   
 - Download de músicas
-  - Poder fazer o Download de uma música
-  - Poder fazer Download de uma Playlist
-  - Poder fazer Download de um arquivo CSV com os dados de uma Playlists e suas músicas
+  - Poder fazer o download de uma música
+  - Poder fazer download de uma playlist
+  - Poder fazer download de um arquivo CSV com os dados de uma playlists e suas músicas
   
-- Aba de configurações
+- Página de configurações
   - Possibilidade de trocar temas
-  - Deve ter a opção de alternar temas além do Light e Dark
+  - Deve ter a opção de alternar temas além do light e dark
   - Possibilidade de alterar a tipografia (fonte)
+
+- Páginas:
+  - Página para configuração
+  - Página para listar as playlists
+  - Página para listar as músicas de uma playlist
+  - Página para mostrar músicas aleatórias
+  - Página para mostrar músicas de uma certeza subcategoria
+  
   
 ### Requisitos não funcionais
 - A Aplicação deve ser Modularizada:
@@ -31,15 +40,6 @@ Plataforma com o principal objetivo de conectar jogadores de xadrez
 
 - Acessibilidade:
     - Utilizar tags HTML5 semânticas e com arial-attributes
-
-- Autenticação:
-    - Usar no mínimo dois oAuth destas redes sociais:
-        - Google
-        - Facebook
-        - Github
-        - Gitlab
-        - Microsoft
-    - Gerar Token JWT para autenticação
 
 - Versionamento de código:
     - Utilizar Git
@@ -57,19 +57,8 @@ Plataforma com o principal objetivo de conectar jogadores de xadrez
 - Tecnologias
     - Front-end
         - Utilizar ReactJs
-        - Se necessário, usar React Redux para centralizar o estado
+        - Se necessário, usar React Redux ou a Context API do React para centralizar o estado
         - Utilizar Redux Saga para operações assíncronas
         - A interface deve usar funções com Debounce/Throttle (Principalmente na pesquisa)
-
-    - Back-end
-        - Servidor em NodeJs
-        - Utilizando o Framework Express.js ou Adonis.js
-        - Real Time: Protocolo Websocket com algum destes:
-            - Socket.io
-            - Feathers
-            
-    - Banco de dados:
-        - Banco de dados não relacional MongoDB
-        - ORM Mongoose
 
 - Deve ser totalmente Open Source
