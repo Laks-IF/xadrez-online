@@ -1,4 +1,4 @@
-## Xadrez Online
+## Lofi App
 Plataforma com o principal objetivo de conectar jogadores de xadrez
 
 ### Requisitos Funcionais
