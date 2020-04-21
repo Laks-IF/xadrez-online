@@ -4,7 +4,7 @@
 - Playlists:
   - Poder criar uma nova playlist
   - Poder deletar uma playlist existente
-  - Poder tocar as músicas playlists
+  - Poder tocar as músicas de uma playlist
   
 - Músicas
   - Poder salvar uma música em uma das playlists
