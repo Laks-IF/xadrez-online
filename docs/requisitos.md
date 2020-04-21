@@ -20,6 +20,7 @@ Plataforma com o principal objetivo de conectar jogadores de xadrez
 - Aba de configurações
   - Possibilidade de trocar temas
   - Deve ter a opção de alternar temas além do Light e Dark
+  - Possibilidade de alterar a tipografia (fonte)
   
 ### Requisitos não funcionais
 - A Aplicação deve ser Modularizada:
