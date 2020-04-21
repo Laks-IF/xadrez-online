@@ -1,7 +1,7 @@
 ## Lofi App
 
 ### Requisitos Funcionais
-- Playlists:
+- Playlists
   - Poder criar uma nova playlist
   - Poder deletar uma playlist existente
   - Poder tocar as músicas de uma playlist
