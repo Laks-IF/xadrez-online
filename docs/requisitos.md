@@ -9,7 +9,6 @@
 - Músicas
   - Poder salvar uma música em uma das playlists
   - Poder remover uma música de uma playlist
-  - Todas as músicas devem ser no estilo Lo-Fi
   
 - Download de músicas
   - Poder fazer o download de uma música
@@ -22,13 +21,14 @@
   - Possibilidade de alterar a tipografia (fonte)
 
 - Páginas:
-  - Página para configuração
-  - Página para listar as playlists
-  - Página para listar as músicas de uma playlist
-  - Página para mostrar músicas aleatórias
-  - Página para mostrar músicas de uma certeza subcategoria
+  - Página para configuração (configuração)
+  - Página para listar as playlists (biblioteca)
+  - Página para listar as músicas de uma playlist (biblioteca > playlist)
+  - Página para mostrar músicas aleatórias (home > random)
+  - Página para mostrar músicas de uma certeza subcategoria (home > subcategoria)
   
-  
+- Deve ter um player de música no parte inferior do aplicativo
+
 ### Requisitos não funcionais
 - A Aplicação deve ser Modularizada:
     - Webpack 4
